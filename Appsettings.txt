@@ -1,1 +1,1 @@
-Logging Mode: Basic
+Logging mode: Standard
