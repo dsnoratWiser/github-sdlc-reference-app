@@ -1,1 +1,1 @@
-Logging mode: Standard
+Logging mode: Advanced
