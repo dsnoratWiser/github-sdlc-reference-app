@@ -1,0 +1,94 @@
+name: Architecture change
+description: Propose or evaluate a significant architectural change.
+title: "[Architecture]: "
+labels:
+  - "type:architecture"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for architectural decisions or changes that affect system structure,
+        dependency boundaries, shared engineering policy, integration patterns, or long-term maintainability.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and problem
+      description: What architectural problem, constraint, or opportunity requires a decision?
+      placeholder: Describe the current situation and why an architectural decision is needed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-direction
+    attributes:
+      label: Proposed direction
+      description: Describe the proposed architectural approach, if one is already known.
+      placeholder: Describe the proposed direction or write "To be determined."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives to consider
+      description: What other reasonable approaches should be evaluated?
+      placeholder: |
+        - Option A:
+        - Option B:
+        - Option C:
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Primary affected area
+      options:
+        - Repository architecture
+        - Application architecture
+        - CI/CD
+        - Security
+        - Dependency management
+        - Release architecture
+        - Agentic development
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Identify technical, compatibility, security, performance, organizational, or operational constraints.
+      placeholder: |
+        - Compatibility:
+        - Security:
+        - Performance:
+        - Operational:
+        - Other:
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Architecture impact
+      description: What components, dependencies, teams, workflows, or long-term maintenance concerns could be affected?
+      placeholder: Describe the expected architectural impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define what must be true for this architecture work to be considered complete.
+      placeholder: |
+        - [ ] Alternatives evaluated
+        - [ ] Decision documented
+        - [ ] ADR created or updated where appropriate
+        - [ ] Affected implementation work identified
+    validations:
+      required: true
