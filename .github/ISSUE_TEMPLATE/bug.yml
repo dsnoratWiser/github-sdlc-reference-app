@@ -1,0 +1,110 @@
+name: Bug report
+description: Report incorrect or unexpected behavior.
+title: "[Bug]: "
+labels:
+  - "type:bug"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report reproducible incorrect behavior.
+        Include enough information for another engineer to understand and reproduce the problem.
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current behavior
+      description: What is happening?
+      placeholder: Describe the incorrect or unexpected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+      placeholder: Describe the expected result.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence that reproduces the problem.
+      placeholder: |
+        1. Start...
+        2. Configure...
+        3. Execute...
+        4. Observe...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Repository
+        - Application - Core
+        - Application - CLI
+        - CI/CD
+        - Security
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Identify the affected release, tag, branch, or commit when known.
+      placeholder: "Example: v0.2.0 or commit abc1234"
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Describe relevant operating system, SDK, runtime, architecture, or other environment details.
+      placeholder: |
+        OS:
+        .NET SDK:
+        Architecture:
+        Other relevant configuration:
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or supporting evidence
+      description: Include relevant logs, error messages, screenshots, or diagnostic information. Remove secrets or sensitive data.
+      placeholder: Paste relevant diagnostic information here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe who or what is affected and how seriously.
+      placeholder: Describe the user, system, build, release, or development impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define observable conditions that must be true for the bug to be considered resolved.
+      placeholder: |
+        - [ ] Original reproduction no longer fails
+        - [ ] Expected behavior is verified
+        - [ ] Regression coverage is added where appropriate
+    validations:
+      required: true

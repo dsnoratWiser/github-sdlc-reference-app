@@ -1,0 +1,67 @@
+name: Feature request
+description: Propose a new capability or user-facing behavior.
+title: "[Feature]: "
+labels:
+  - "type:feature"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a new capability.
+        Please provide enough context for implementation and review.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: What problem, limitation, or user need are we addressing?
+      placeholder: Describe the problem rather than only the desired implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should be possible when this work is complete?
+      placeholder: Describe the expected behavior or capability.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      description: Which area is primarily affected?
+      options:
+        - Repository
+        - Application - Core
+        - Application - CLI
+        - CI/CD
+        - Security
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define observable conditions that must be satisfied before this issue is complete.
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints or considerations
+      description: Describe compatibility, performance, security, architecture, or other constraints.
+      placeholder: Add relevant constraints, or write "None."
+    validations:
+      required: false
