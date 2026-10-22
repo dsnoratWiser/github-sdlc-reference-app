@@ -1,0 +1,21 @@
+# Default ownership for the repository
+* @dsnoratWiser
+
+# GitHub configuration and repository governance
+/.github/ @dsnoratWiser
+
+# Application source
+/src/ @dsnoratWiser
+
+# Automated tests
+/tests/ @dsnoratWiser
+
+# Architecture documentation and decisions
+/docs/architecture/ @dsnoratWiser
+/docs/adr/ @dsnoratWiser
+
+# Repository-wide .NET engineering policy
+/global.json @dsnoratWiser
+/Directory.Build.props @dsnoratWiser
+/Directory.Packages.props @dsnoratWiser
+/.editorconfig @dsnoratWiser
